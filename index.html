@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173b50">
+  <meta name="description" content="Una invitación a compartir playa, atardeceres y una aventura juntos.">
+  <title>Para Regina ♡ · Puerto Escondido</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="experience" data-state="closed">
+    <section class="envelope-scene" aria-label="Una carta para Regina">
+      <p class="eyebrow">UN FIN DE SEMANA · JUNTO AL MAR</p>
+      <h1 class="recipient">Para Regina <span>♡</span></h1>
+      <div class="envelope-wrap">
+        <div class="paper-preview" aria-hidden="true"><span>Una aventura juntos</span><i>♡</i></div>
+        <button id="envelope" class="envelope" aria-label="Abrir la carta para Regina">
+          <span class="envelope-back"></span><span class="envelope-front"></span>
+          <span class="envelope-flap"></span><span class="seal" aria-hidden="true">♡</span>
+        </button>
+      </div>
+      <p class="open-hint">Toca para abrir <span aria-hidden="true">↗</span></p>
+      <p class="scene-footer">Hay lugares que son mejores contigo.</p>
+    </section>
+    <article id="invitation" class="letter" hidden aria-labelledby="invitation-title">
+      <header class="letter-header"><span>Para Regina ♡</span><span class="postmark" aria-hidden="true">PUERTO<br>ESCONDIDO<br>〰</span></header>
+      <p class="eyebrow letter-eyebrow">UNA PEQUEÑA ESCAPADA</p>
+      <h2 id="invitation-title" tabindex="-1">¿Te gustaría escaparnos juntos a <em>Puerto Escondido</em> un fin de semana?</h2>
+      <figure><img src="assets/snoopy.jpg" width="736" height="633" alt="Snoopy frente al mar y las olas de la playa"><figcaption>Playa, atardeceres y una aventura juntos.</figcaption></figure>
+      <button id="accept" class="accept-button">Sí, acepto ♡</button>
+      <p class="letter-footer">Tú, yo y el mar.</p>
+    </article>
+    <section id="celebration" class="celebration" hidden aria-labelledby="celebration-title" aria-live="polite">
+      <span class="celebration-heart" aria-hidden="true">♡</span>
+      <p class="eyebrow">NUESTRA PRÓXIMA AVENTURA</p>
+      <h2 id="celebration-title" tabindex="-1">¡Yei!!</h2>
+      <p>Puerto Escondido nos espera ♡</p>
+      <div class="celebration-wave" aria-hidden="true">〰</div>
+    </section>
+  </main>
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+  <audio id="music" src="assets/music.mp3" preload="auto" autoplay></audio>
+  <p id="audio-status" class="audio-status" role="status"></p>
+  <noscript><p class="noscript">Activa JavaScript para abrir esta carta y ver la invitación.</p></noscript>
+</body>
+</html>
